@@ -7,8 +7,26 @@
 </head>
 <body>
     <script>
-        var first = "<h1>hello world</h1>";
-        document.write(first);
+        // var: var variables can be updated and re-declared within its scope;
+        var name_var = "Halo Var!";
+        var name_var = "Halo Var!";
+        name_var = "Halo Var!"; 
+
+        document.write(name_var, '<br/>');
+
+        // let : let variables can be updated but not re-declared;
+        let name_let = "Halo Let!";
+        // let name_let = "Halo Let!"; // this will error
+        name_let = "Halo Let!";
+
+        document.write(name_let, '<br/>');
+
+        // const : const variables can neither be updated nor re-declared.
+        let name_const = "Halo Const!";
+        // let name_const = "Halo Const!"; // this will error
+        name_const = "Halo Const!";
+
+        document.write(name_const);
     </script>
 </body>
 </html>
