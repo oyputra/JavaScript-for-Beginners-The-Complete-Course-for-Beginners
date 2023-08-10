@@ -7,26 +7,17 @@
 </head>
 <body>
     <script>
-        // var: var variables can be updated and re-declared within its scope;
-        var name_var = "Halo Var!";
-        var name_var = "Halo Var!";
-        name_var = "Halo Var!"; 
+        // Global Variabel
+        var x = 20;
 
-        document.write(name_var, '<br/>');
+        function fun(params) {
+            // Lokal Variable
+            var x = 15;
+            document.write(x, '<br/>');
+        }
 
-        // let : let variables can be updated but not re-declared;
-        let name_let = "Halo Let!";
-        // let name_let = "Halo Let!"; // this will error
-        name_let = "Halo Let!";
-
-        document.write(name_let, '<br/>');
-
-        // const : const variables can neither be updated nor re-declared.
-        let name_const = "Halo Const!";
-        // let name_const = "Halo Const!"; // this will error
-        name_const = "Halo Const!";
-
-        document.write(name_const);
+        fun();
+        document.write(x);
     </script>
 </body>
 </html>
