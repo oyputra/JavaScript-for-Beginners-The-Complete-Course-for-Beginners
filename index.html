@@ -7,16 +7,17 @@
 </head>
 <body>
     <script>
-        // If Else Statement
+        // Condition Ternary Statement
+        var x = 200;
+        var y;
 
-        a = 30;
-        z = 30;
+        // Way 1
+        x >= 201 ? (y = 0) : (y = 100);
+        document.write(y);
 
-        if (a == z) {
-            document.write('True');
-        } else {
-            document.write('False');
-        }
+        // Way 2
+        y = "Value: " + (x == 200 ? "Yes" : "No");
+        document.write('<br/>', y);
     </script>
 </body>
 </html>
