@@ -7,17 +7,32 @@
 </head>
 <body>
     <script>
-        // Condition Ternary Statement
-        var x = 200;
-        var y;
+        // Switch Statement
+        var day = 5;
 
-        // Way 1
-        x >= 201 ? (y = 0) : (y = 100);
-        document.write(y);
-
-        // Way 2
-        y = "Value: " + (x == 200 ? "Yes" : "No");
-        document.write('<br/>', y);
+        switch (day) {
+            case 1:
+                document.write("Today is<br/><h1>Monday</h1>");
+                break;
+            case 2:
+                document.write("Today is<br/><h1>Tuesday</h1>");
+                break;
+            case 3:
+                document.write("Today is<br/><h1>Wednesday</h1>");
+                break;
+            case 4:
+                document.write("Today is<br/><h1>Thursday</h1>");
+                break;
+            case 5:
+                document.write("Today is<br/><h1>Friday</h1>");
+                break;
+            case 6:
+                document.write("Today is<br/><h1>Saturday</h1>");
+                break;
+            case 7:
+                document.write("Today is<br/><h1>Sunday</h1>");
+                break;
+        }
     </script>
 </body>
 </html>
