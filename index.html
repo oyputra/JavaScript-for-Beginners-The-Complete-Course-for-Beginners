@@ -7,52 +7,43 @@
 </head>
 <body>
     <script>
-        // Assignment Operator
+        // Comparison Operator
         a = 10;
         b = 20;
-        document.write('<h1>Assignment Operator</h1>');
+        document.write('<h1>Comparison Operator</h1>');
         document.write('<h3>Variabel <br/>a = 10<br/>b = 20</h3>');
         
-        // Addition
-        a += b;
-        document.write('1) a += b<br/>Jawaban: ' + a);
+        // Equal To
+        c = a == b
+        document.write('1) Equal To "==" <br>a == b <br/>Jawaban: ' + c)   ;
         
-        // Subtraction
-        a = 10;
-        b = 20;
-        b -= a;
-        document.write('<br/><br/>2) b -= a<br/>Jawaban: ' + b);
+        // Equal To and Data Type
+        d = b === a;
+        document.write('<br/><br/>2) Equal to and Data Type "==="<br/> b === a<br/>Jawaban: ' + d);
         
-        // Multipication
-        a = 10;
-        b = 20;
-        b *= a;
-        document.write('<br/><br/>3) b *= a<br/>Jawaban: ' + b);
+        // Not Equal To
+        e = b != a;
+        document.write('<br/><br/>3) Not Equal To "!=" <br/>b != a<br/>Jawaban: ' + e);
         
-        // Exponentiation
-        a = 10;
-        b = 20;
-        a **= b;
-        document.write('<br/><br/>4) a **= b<br/>Jawaban: ' + a);
+        // Not Equal To and Data Type
+        f = a !== b;
+        document.write('<br/><br/>4) Not Equal To and Data Type "!==" <br/>a !== b<br/>Jawaban: ' + f);
         
-        // Division
-        a = 10;
-        b = 20;
-        b /= a;
-        document.write('<br/><br/>5) b /= a<br/>Jawaban: ' + b);
+        // Greater Than
+        g = b > a;
+        document.write('<br/><br/>5) Greater Than ">" <br/>b > a<br/>Jawaban: ' + g);
         
-        // Modulus (Reminder)
-        a = 10;
-        b = 20;
-        b %= a;
-        document.write('<br/><br/>6) b %= a<br/>Jawaban: ' + b);
+        // Less Than
+        h = b < a;
+        document.write('<br/><br/>6) Less Than "<" <br/>b < a<br/>Jawaban: ' + h);
         
-        // Equal
-        a = 10;
-        b = 20;
-        a = b;
-        document.write('<br/><br/>7) a = b<br/>Jawaban: ' + a);
-
+        // Greater Than and Equal To
+        i = a >= b;
+        document.write('<br/><br/>7) Greater Than and Equal To ">=" <br/>a >= b<br/>Jawaban: ' + i);
+        
+        // Less Than and Equal To
+        j = a <= b;
+        document.write('<br/><br/>8) Less Than and Equal "<=" <br/>a <= b<br/>Jawaban: ' + j);
 
     </script>
 </body>
