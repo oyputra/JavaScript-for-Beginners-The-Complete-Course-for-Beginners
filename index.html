@@ -7,30 +7,19 @@
 </head>
 <body>
     <script>
-        // Prompt Box
-        var value = prompt("Enter the value:");
-
-        if (value) {
-            if (value > 100 || value < 0) {
-                alert('Please, enter the value correctly! with range value: 1 - 100');
-                location.reload();
-            } else if (value == "") {
-                alert('Please, fill form in The Box ');
-                location.reload();
-            }
-
-            if (value >= 80 && value <= 100) {
-                document.write('Perfect!');
-            } else if (value >= 60 && value <= 80) {
-                document.write('Good!');
-            } else if (value >= 40 && value <= 60) {
-                document.write('Not Good!');
-            } else if (value <= 40) {
-                document.write('Bad!, Learning More Again!');
-            }
-        } else {
-            document.write('Thanks, for your decision!');
+        // Functions
+        function abc() {
+            document.write('Javascript Days!<br/>');
         }
+        function js() {
+            document.write('Still Learning for Frontend!<br/>');
+        }
+
+        abc();
+        abc();
+        abc();
+        js();
+        abc();
     </script>
 </body>
 </html>
