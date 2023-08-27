@@ -7,19 +7,18 @@
 </head>
 <body>
     <script>
-        // Functions with Parameters
-        function abc(your_name, your_age) {
-            document.write('Your Name is: ' + your_name + '<br/>Your Age is: ' + your_age)
+        // Function with Return
+        function add(Math, Che, Phy) {
+            var y = Math + Che + Phy;
+            return y;
+        }
+        function percentage(total) {
+            var z = (total / 300) * 100;
+            document.write(z);
         }
 
-        your_name = prompt('Enter Your Name:');
-        your_age = prompt('Enter Your Age:');
-        
-        if (your_name && your_age) {
-            abc(your_name, your_age);
-        } else {
-            document.write('Thanks for your decision. Its Okay!');
-        }
+        var sum = add(90, 100, 70);
+        percentage(sum);
     </script>
 </body>
 </html>
