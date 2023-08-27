@@ -7,19 +7,19 @@
 </head>
 <body>
     <script>
-        // Functions
-        function abc() {
-            document.write('Javascript Days!<br/>');
-        }
-        function js() {
-            document.write('Still Learning for Frontend!<br/>');
+        // Functions with Parameters
+        function abc(your_name, your_age) {
+            document.write('Your Name is: ' + your_name + '<br/>Your Age is: ' + your_age)
         }
 
-        abc();
-        abc();
-        abc();
-        js();
-        abc();
+        your_name = prompt('Enter Your Name:');
+        your_age = prompt('Enter Your Age:');
+        
+        if (your_name && your_age) {
+            abc(your_name, your_age);
+        } else {
+            document.write('Thanks for your decision. Its Okay!');
+        }
     </script>
 </body>
 </html>
