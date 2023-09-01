@@ -8,10 +8,13 @@
 
 <body>
     <script>
-        // For Loop
+        // Nested Loop
         var a = 1;
-        for (a; a <= 20; a++) {
-            document.write(a + ") Hello Gais! <br>");
+        for (a; a <= 100; a += 10) {
+            for (b = a; b < a + 10; b++) {
+                document.write(b + " ");
+            }
+            document.write("<br>");
         }
     </script>
 </body>
