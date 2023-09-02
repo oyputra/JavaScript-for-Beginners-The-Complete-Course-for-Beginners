@@ -8,14 +8,15 @@
 
 <body>
     <script>
-        // Nested Loop
-        var a = 1;
-        for (a; a <= 100; a += 10) {
-            for (b = a; b < a + 10; b++) {
-                document.write(b + " ");
+        // Arrays
+        var array = [10, 20, 30, 40, 50, 60, 70];
+        document.write(array[6]);
+        
+        document.write("<ul>")
+            for (var a = 0; a <= 5; a++) {
+                document.write("<li>" + array[a] + "</li>")
             }
-            document.write("<br>");
-        }
+        document.write("</ul>")
     </script>
 </body>
 </html>
