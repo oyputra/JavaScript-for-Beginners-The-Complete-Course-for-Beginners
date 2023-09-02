@@ -8,17 +8,16 @@
 
 <body>
     <script>
-        // Shift and Unshift Methods
-        var a = ['Dominic', 'Carl', 'Ferrary', 'Elle', 'Axel', 'Barry'];
-        document.write('Array: ', a, '<br>');
-        
-        // The shift() method of Array instances removes the first element from an array and returns that removed element. This method changes the length of the array.
-        a.shift();
-        document.write('shift(): ', a, '<br>');
+        // Concat and Join Methods
+        var a = ['Dominic', 'Carl'];
+        var b = [20, 30]        
+        // The concat() method of Array instances is used to merge two or more arrays. This method does not change the existing arrays, but instead returns a new array.
+        c = a.concat(b);
+        document.write('concat(): ' + c + '<br>');
 
-        // The unshift() method of Array instances adds the specified elements to the beginning of an array and returns the new length of the array.
-        a.unshift('Putra');
-        document.write('unshift(): ', a, '<br>');
+        // The join() method of Array instances creates and returns a new string by concatenating all of the elements in this array, separated by commas or a specified separator string. If the array has only one item, then that item will be returned without using the separator.
+        d = c.join(' - ');
+        document.write('join(): ' + d + '<br>');
     </script>
 </body>
 </html>
