@@ -8,13 +8,17 @@
 
 <body>
     <script>
-        // Sort and Reverse Methods
+        // Pop and Push Methods
         var a = ['Dominic', 'Carl', 'Ferrary', 'Elle', 'Axel', 'Barry'];
         document.write('Array: ', a, '<br>');
-        a.sort();
-        document.write('sort(): ', a, '<br>');
-        a.reverse();
-        document.write('reverse(): ', a, '<br>');
+        
+        // The pop() method of Array instances removes the last element from an array and returns that element.
+        a.pop();
+        document.write('pop(): ', a, '<br>');
+
+        // The push() method of Array instances adds the specified elements to the end of an array and returns the new length of the array.
+        a.push('Putra');
+        document.write('push(): ', a, '<br>');
     </script>
 </body>
 </html>
