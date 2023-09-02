@@ -8,16 +8,18 @@
 
 <body>
     <script>
-        // Concat and Join Methods
-        var a = ['Dominic', 'Carl'];
-        var b = [20, 30]        
-        // The concat() method of Array instances is used to merge two or more arrays. This method does not change the existing arrays, but instead returns a new array.
-        c = a.concat(b);
-        document.write('concat(): ' + c + '<br>');
+        // Slice and Splice Methods
+        var a = ['Dominic', 'Carl', 'Barry', 'Elle', 'Ferrary'];
+        document.write('array: ' + a + '<br>');
+               
+        // The slice() method of Array instances returns a shallow copy of a portion of an array into a new array object selected from start to end (end not included) where start and end represent the index of items in that array.
+        b = a.slice(-3);
+        document.write('slice(): ' + b + '<br>');
 
-        // The join() method of Array instances creates and returns a new string by concatenating all of the elements in this array, separated by commas or a specified separator string. If the array has only one item, then that item will be returned without using the separator.
-        d = c.join(' - ');
-        document.write('join(): ' + d + '<br>');
+        // The splice() method of Array instances changes the contents of an array by removing or replacing existing elements and/or adding new elements in place.
+        // var pertama untuk menentuka pilihan index array, var kedua jika diisi 0 maka akan menambahkan value dan jika diisi lebih dari 1 akan berfungsi replace.
+        a.splice(2, 0, "Putra");
+        document.write('splice(): ' + a + '<br>');
     </script>
 </body>
 </html>
