@@ -8,17 +8,17 @@
 
 <body>
     <script>
-        // Pop and Push Methods
+        // Shift and Unshift Methods
         var a = ['Dominic', 'Carl', 'Ferrary', 'Elle', 'Axel', 'Barry'];
         document.write('Array: ', a, '<br>');
         
-        // The pop() method of Array instances removes the last element from an array and returns that element.
-        a.pop();
-        document.write('pop(): ', a, '<br>');
+        // The shift() method of Array instances removes the first element from an array and returns that removed element. This method changes the length of the array.
+        a.shift();
+        document.write('shift(): ', a, '<br>');
 
-        // The push() method of Array instances adds the specified elements to the end of an array and returns the new length of the array.
-        a.push('Putra');
-        document.write('push(): ', a, '<br>');
+        // The unshift() method of Array instances adds the specified elements to the beginning of an array and returns the new length of the array.
+        a.unshift('Putra');
+        document.write('unshift(): ', a, '<br>');
     </script>
 </body>
 </html>
