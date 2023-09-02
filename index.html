@@ -8,18 +8,26 @@
 
 <body>
     <script>
-        // Slice and Splice Methods
-        var a = ['Dominic', 'Carl', 'Barry', 'Elle', 'Ferrary'];
-        document.write('array: ' + a + '<br>');
-               
-        // The slice() method of Array instances returns a shallow copy of a portion of an array into a new array object selected from start to end (end not included) where start and end represent the index of items in that array.
-        b = a.slice(-3);
-        document.write('slice(): ' + b + '<br>');
+        // isArray Methods
+        var a = 20;
+        var b = [20, 30, 40];
 
-        // The splice() method of Array instances changes the contents of an array by removing or replacing existing elements and/or adding new elements in place.
-        // var pertama untuk menentuka pilihan index array, var kedua jika diisi 0 maka akan menambahkan value dan jika diisi lebih dari 1 akan berfungsi replace.
-        a.splice(2, 0, "Putra");
-        document.write('splice(): ' + a + '<br>');
+        document.write('var a: ' + a + '<br>')
+        document.write('var b: ' + b + '<br>')
+        
+        if (Array.isArray(a)) {
+            document.write('var a is an Array')
+        } else {
+            document.write('var a is not an Array')
+        }
+        
+        document.write('<br>')
+        
+        if (Array.isArray(b)) {
+            document.write('var b is an Array')
+        } else {
+            document.write('var b is not an Array')
+        }
     </script>
 </body>
 </html>
