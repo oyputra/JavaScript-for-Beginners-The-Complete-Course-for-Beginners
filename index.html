@@ -8,15 +8,13 @@
 
 <body>
     <script>
-        // indexOf and lastIndex Method
-        // The indexOf() method of Array instances returns the first index at which a given element can be found in the array, or -1 if it is not present.
-        var a = ['Putra', 'Ricardo', 'Putra', 'Edo', 'Hafizh', 'Putra'];
-        var b = a.indexOf("Putra", 5);
-        var c = a.lastIndexOf("Putra", 4);
-
-        document.write(a + "<br/>");
-        document.write(b + "<br/>");
-        document.write(c + "<br/>");
+        // The forEach Method
+        var Name = ["Jokowi", "Prabowo", "Ganjar", "Anies"];
+        document.write(Name + " :<br/>");
+        Name.forEach(loop);
+        function loop(value, index) {
+            document.write(index + ") " + value + "<br/>");
+        }
     </script>
 </body>
 </html>
