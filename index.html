@@ -8,26 +8,15 @@
 
 <body>
     <script>
-        // isArray Methods
-        var a = 20;
-        var b = [20, 30, 40];
+        // indexOf and lastIndex Method
+        // The indexOf() method of Array instances returns the first index at which a given element can be found in the array, or -1 if it is not present.
+        var a = ['Putra', 'Ricardo', 'Putra', 'Edo', 'Hafizh', 'Putra'];
+        var b = a.indexOf("Putra", 5);
+        var c = a.lastIndexOf("Putra", 4);
 
-        document.write('var a: ' + a + '<br>')
-        document.write('var b: ' + b + '<br>')
-        
-        if (Array.isArray(a)) {
-            document.write('var a is an Array')
-        } else {
-            document.write('var a is not an Array')
-        }
-        
-        document.write('<br>')
-        
-        if (Array.isArray(b)) {
-            document.write('var b is an Array')
-        } else {
-            document.write('var b is not an Array')
-        }
+        document.write(a + "<br/>");
+        document.write(b + "<br/>");
+        document.write(c + "<br/>");
     </script>
 </body>
 </html>
