@@ -8,18 +8,16 @@
 
 <body>
     <script>
-        // some & every method
-        var a = [10, 10, 8, 2, 7, 3];
-        var b = [15, 20, 25, 17, 23, 19];
+        // find & findIndex method
+        var a = [10, 12, 8, 30, 7, 3];
 
         document.write(a + '<br>');
+        
+        var b = a.find(checkvalue); 
+        var c = a.findIndex(checkvalue);
+        
         document.write(b + '<br>');
-        
-        var c = a.some(checkvalue); 
-        var d = b.some(checkvalue);
-        
         document.write(c + '<br>');
-        document.write(d + '<br>');
         
         function checkvalue(age) {
             return age >= 15;
