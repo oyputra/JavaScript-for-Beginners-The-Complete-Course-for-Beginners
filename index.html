@@ -8,15 +8,12 @@
 
 <body>
     <script>
-        // The toString, valueOf, & fill Methods
-        var a = [20, 30, 40];
-        document.write(a + '<br/>');
-        
-        b = a.toString();
-        document.write(b + '<br/>');
+        // Includes Method
+        var a = [10, 20, "30", 40, 50];
+        document.write(a + '<br>');
 
-        c = a.fill('Hi');
-        document.write(c + '<br/>');
+        var b = a.includes("30");
+        document.write(b + '<br>');
     </script>
 </body>
 </html>
