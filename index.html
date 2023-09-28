@@ -8,16 +8,14 @@
 
 <body>
     <script>
-        // find & findIndex method
-        var a = [10, 12, 8, 30, 7, 3];
+        // filter method
+        var a = [10, 12, 8, 30, 38, 20];
 
         document.write(a + '<br>');
         
-        var b = a.find(checkvalue); 
-        var c = a.findIndex(checkvalue);
+        var b = a.filter(checkvalue); 
         
         document.write(b + '<br>');
-        document.write(c + '<br>');
         
         function checkvalue(age) {
             return age >= 15;
