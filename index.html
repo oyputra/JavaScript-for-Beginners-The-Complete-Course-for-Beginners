@@ -8,12 +8,22 @@
 
 <body>
     <script>
-        // Includes Method
-        var a = [10, 20, "30", 40, 50];
-        document.write(a + '<br>');
+        // some & every method
+        var a = [10, 10, 8, 2, 7, 3];
+        var b = [15, 20, 25, 17, 23, 19];
 
-        var b = a.includes("30");
+        document.write(a + '<br>');
         document.write(b + '<br>');
+        
+        var c = a.some(checkvalue); 
+        var d = b.some(checkvalue);
+        
+        document.write(c + '<br>');
+        document.write(d + '<br>');
+        
+        function checkvalue(age) {
+            return age >= 15;
+        };
     </script>
 </body>
 </html>
