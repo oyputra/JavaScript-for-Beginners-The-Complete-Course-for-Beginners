@@ -8,13 +8,15 @@
 
 <body>
     <script>
-        // The forEach Method
-        var Name = ["Jokowi", "Prabowo", "Ganjar", "Anies"];
-        document.write(Name + " :<br/>");
-        Name.forEach(loop);
-        function loop(value, index) {
-            document.write(index + ") " + value + "<br/>");
-        }
+        // The toString, valueOf, & fill Methods
+        var a = [20, 30, 40];
+        document.write(a + '<br/>');
+        
+        b = a.toString();
+        document.write(b + '<br/>');
+
+        c = a.fill('Hi');
+        document.write(c + '<br/>');
     </script>
 </body>
 </html>
