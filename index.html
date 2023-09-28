@@ -8,18 +8,27 @@
 
 <body>
     <script>
-        // filter method
-        var a = [10, 12, 8, 30, 38, 20];
+            // Objects
+            var a = {
+                name: "Oy",
+                lname: "Putra",
+                age: "25",
+                email: "oyputra@gmail.com",
+                hobby: ["Billiard", "Football", "Futsal", "Badminton"],
+                income: function() {
+                    return 5000000;
+                },
+                fullName: function() {
+                    return this.name + " " + this.lname;
+                }
+            };
+            document.write(a.fullName() + "<br>");
 
-        document.write(a + '<br>');
-        
-        var b = a.filter(checkvalue); 
-        
-        document.write(b + '<br>');
-        
-        function checkvalue(age) {
-            return age >= 15;
-        };
+            var data = new Object();
+            data.firstName  = "Oy";
+            data.lastName   = "Putra";
+            data.age        = 25;
+            document.write(data.firstName + "<br>"); 
     </script>
 </body>
 </html>
