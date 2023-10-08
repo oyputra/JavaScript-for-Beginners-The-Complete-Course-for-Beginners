@@ -8,27 +8,20 @@
 
 <body>
     <script>
-            // Objects
-            var a = {
-                name: "Oy",
-                lname: "Putra",
-                age: "25",
-                email: "oyputra@gmail.com",
-                hobby: ["Billiard", "Football", "Futsal", "Badminton"],
-                income: function() {
-                    return 5000000;
-                },
-                fullName: function() {
-                    return this.name + " " + this.lname;
-                }
-            };
-            document.write(a.fullName() + "<br>");
+            // Arrays Objects
+            var x = [
+                {name: 'oyputra', age: 25},
+                {name: 'zevan', age: 7},
+                {name: 'shinta', age: 33},
+            ];
 
-            var data = new Object();
-            data.firstName  = "Oy";
-            data.lastName   = "Putra";
-            data.age        = 25;
-            document.write(data.firstName + "<br>"); 
+            console.log(x);
+
+            for(var i=0; i <= x.length; i++) {
+                if (x[i]['name'] !== undefined) {
+                    document.write(x[i].name + ' - ' + x[i].age + '<br>');
+                }
+            }
     </script>
 </body>
 </html>
