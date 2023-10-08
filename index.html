@@ -8,20 +8,18 @@
 
 <body>
     <script>
-            // Arrays Objects
-            var x = [
-                {name: 'oyputra', age: 25},
-                {name: 'zevan', age: 7},
-                {name: 'shinta', age: 33},
-            ];
+            // For in Loop
+            var a = {
+                firstName: "oy",
+                lastName: "putra",
+                age: "25",
+                city: "bekasi",
+                education: "Bachelor's of Computer Science"
+            };
 
-            console.log(x);
-
-            for(var i=0; i <= x.length; i++) {
-                if (x[i]['name'] !== undefined) {
-                    document.write(x[i].name + ' - ' + x[i].age + '<br>');
-                }
-            }
+            for (var key in a) {
+                document.write(key + ": " + a[key] + "<br>");
+            };
     </script>
 </body>
 </html>
