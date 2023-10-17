@@ -8,13 +8,24 @@
 
 <body>
     <script>
-            // String Methods Part 2
-            var a = "JavaScript is a great language is programming!";
+            // String Methods Part 3
+            var a = "              JavaScript is a great language is programming!           ";
             document.write(a + '<br>');
-            document.write('match: ' + a.match(/is/g) + '<br>');
-            document.write('indexOf "age": ', a.indexOf('age'), '<br>');
-            document.write('lasIndexOf "is": ', a.lastIndexOf('is'), '<br>');
-            document.write('replace "is" to be "are": ', a.replace(/is/g, 'are'));
+            // alert(a.trim());
+            document.write('trim: ' + a + '<br>');
+            a = a.trim();
+            document.write('charAt "1": ' + a.charAt(1) + '<br>');
+            document.write('charCodeAt "1": ' + a.charCodeAt(1) + '<br>');
+            document.write('String.fromCharCode(97): ' + String.fromCharCode(97) + '<br>');
+            document.write('split: ' + a.split('is') + '<br>');
+            a = a + '<br>';
+            document.write('repeat 10: ' + a.repeat(10) + '<br>');
+            document.write('slice 11 - 21: ' + a.slice(11, 21) + '<br>');
+            document.write('substr 11 - 21: ' + a.substr(11, 21) + '<br>');
+            document.write('substring 11 - 21: ' + a.substring(11, 21) + '<br>');
+            document.write('100 <br>');
+            b = 100
+            document.write('toString: ' + typeof b.toString() + '<br>');
     </script>
 </body>
 </html>
