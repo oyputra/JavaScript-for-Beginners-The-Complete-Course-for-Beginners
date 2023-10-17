@@ -8,18 +8,16 @@
 
 <body>
     <script>
-            // For in Loop
-            var a = {
-                firstName: "oy",
-                lastName: "putra",
-                age: "25",
-                city: "bekasi",
-                education: "Bachelor's of Computer Science"
-            };
-
-            for (var key in a) {
-                document.write(key + ": " + a[key] + "<br>");
-            };
+            // String Methods Part 1
+            var a = "Hello World!";
+            document.write('Hello World!<br>');
+            document.write('length: ' + a.length + '<br>');
+            document.write('toLowerCase: ' + a.toLowerCase() + '<br>');
+            document.write('toUpperCase: ' + a.toUpperCase() + '<br>');
+            document.write('includes "Hello": ' + a.includes('Hello') + '<br>');
+            document.write('startsWith "He": ' + a.startsWith('He') + '<br>');
+            document.write('endsWith "d!": ' + a.endsWith('d!') + '<br>');
+            document.write('search "Wo": ' + a.search('Wo') + '<br>');
     </script>
 </body>
 </html>
