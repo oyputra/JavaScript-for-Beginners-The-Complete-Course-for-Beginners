@@ -8,16 +8,13 @@
 
 <body>
     <script>
-            // String Methods Part 1
-            var a = "Hello World!";
-            document.write('Hello World!<br>');
-            document.write('length: ' + a.length + '<br>');
-            document.write('toLowerCase: ' + a.toLowerCase() + '<br>');
-            document.write('toUpperCase: ' + a.toUpperCase() + '<br>');
-            document.write('includes "Hello": ' + a.includes('Hello') + '<br>');
-            document.write('startsWith "He": ' + a.startsWith('He') + '<br>');
-            document.write('endsWith "d!": ' + a.endsWith('d!') + '<br>');
-            document.write('search "Wo": ' + a.search('Wo') + '<br>');
+            // String Methods Part 2
+            var a = "JavaScript is a great language is programming!";
+            document.write(a + '<br>');
+            document.write('match: ' + a.match(/is/g) + '<br>');
+            document.write('indexOf "age": ', a.indexOf('age'), '<br>');
+            document.write('lasIndexOf "is": ', a.lastIndexOf('is'), '<br>');
+            document.write('replace "is" to be "are": ', a.replace(/is/g, 'are'));
     </script>
 </body>
 </html>
