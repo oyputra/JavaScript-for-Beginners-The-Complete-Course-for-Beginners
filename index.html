@@ -8,24 +8,35 @@
 
 <body>
     <script>
-            // String Methods Part 3
-            var a = "              JavaScript is a great language is programming!           ";
-            document.write(a + '<br>');
-            // alert(a.trim());
-            document.write('trim: ' + a + '<br>');
-            a = a.trim();
-            document.write('charAt "1": ' + a.charAt(1) + '<br>');
-            document.write('charCodeAt "1": ' + a.charCodeAt(1) + '<br>');
-            document.write('String.fromCharCode(97): ' + String.fromCharCode(97) + '<br>');
-            document.write('split: ' + a.split('is') + '<br>');
-            a = a + '<br>';
-            document.write('repeat 10: ' + a.repeat(10) + '<br>');
-            document.write('slice 11 - 21: ' + a.slice(11, 21) + '<br>');
-            document.write('substr 11 - 21: ' + a.substr(11, 21) + '<br>');
-            document.write('substring 11 - 21: ' + a.substring(11, 21) + '<br>');
-            document.write('100 <br>');
-            b = 100
-            document.write('toString: ' + typeof b.toString() + '<br>');
+            // Number Method
+            a = "200.334";
+            document.write('value: ', a, '<br>');
+            document.write('type of: ', typeof a, '<br><br>');
+
+            b = Number(a);
+            document.write('Number(): ', b, ' ', typeof b, '<br>');
+
+            b = parseInt(a);
+            document.write('parseInt(): ', b, ' ', typeof b, '<br>');
+
+            b = parseFloat(a);
+            document.write('parseFloat(): ', b, ' ', typeof b, '<br>');
+
+            b = isFinite(a);
+            document.write('isFinite(): ', b, ' ', typeof b, '<br>');
+
+            a = 200.334;
+            document.write('<br>value: ', a, '<br>');
+            document.write('type of: ', typeof a, '<br><br>');
+            
+            b = Number.isInteger(a);
+            document.write('Number.isInteger(): ', b, ' ', typeof b, '<br>');
+            
+            b = a.toFixed(3);
+            document.write('a.toFixed(3): ', b, ' ', typeof b, '<br>');
+
+            b = a.toPrecision(10);
+            document.write('a.toPrecision(10): ', b, ' ', typeof b, '<br>');
     </script>
 </body>
 </html>
