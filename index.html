@@ -8,35 +8,19 @@
 
 <body>
     <script>
-            // Number Method
-            a = "200.334";
-            document.write('value: ', a, '<br>');
-            document.write('type of: ', typeof a, '<br><br>');
-
-            b = Number(a);
-            document.write('Number(): ', b, ' ', typeof b, '<br>');
-
-            b = parseInt(a);
-            document.write('parseInt(): ', b, ' ', typeof b, '<br>');
-
-            b = parseFloat(a);
-            document.write('parseFloat(): ', b, ' ', typeof b, '<br>');
-
-            b = isFinite(a);
-            document.write('isFinite(): ', b, ' ', typeof b, '<br>');
-
-            a = 200.334;
-            document.write('<br>value: ', a, '<br>');
-            document.write('type of: ', typeof a, '<br><br>');
-            
-            b = Number.isInteger(a);
-            document.write('Number.isInteger(): ', b, ' ', typeof b, '<br>');
-            
-            b = a.toFixed(3);
-            document.write('a.toFixed(3): ', b, ' ', typeof b, '<br>');
-
-            b = a.toPrecision(10);
-            document.write('a.toPrecision(10): ', b, ' ', typeof b, '<br>');
+            // Math Method Part 1
+            var x = 3.56;
+            document.write("Value: ", x, "<br>Math.ceil(): ", Math.ceil(x), "<br><br>");
+            var x = 3.56;
+            document.write("Value: ", x, "<br>Math.floor(): ", Math.floor(x), "<br><br>");
+            var x = 3.56;
+            document.write("Value: ", x, "<br>Math.round(): ", Math.round(x), "<br><br>");
+            var x = 3.56;
+            document.write("Value: ", x, "<br>Math.trunc(): ", Math.trunc(x), "<br><br>");
+            var x = [30, 20, 10, 40, 50, 60, 70];
+            document.write("Value: ", x, "<br>Math.min(): ", Math.min(...x), "<br><br>");
+            var x = [30, 20, 10, 40, 50, 60, 70];
+            document.write("Value: ", x, "<br>Math.max(): ", Math.max(...x), "<br><br>");
     </script>
 </body>
 </html>
