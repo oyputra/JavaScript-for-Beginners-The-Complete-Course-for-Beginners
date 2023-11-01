@@ -8,19 +8,22 @@
 
 <body>
     <script>
-            // Math Method Part 2
-            var x = 64;
-            document.write("Value: ", x, "<br>Math.sqrt(): ", Math.sqrt(x), "<br><br>");
-            var x = 64;
-            document.write("Value: ", x, "<br>Math.cbrt(): ", Math.cbrt(x), "<br><br>");
-            var x = 8;
-            var y = 2;
-            document.write("Value: ", x, ', ', y, "<br>Math.pow(): ", Math.pow(x, y), "<br><br>");
-            document.write("Math.random(): ", Math.random(), "<br><br>");
-            document.write("Value: ", x, "<br>Math.floor(Math.random() * 10) + 1: ", Math.floor(Math.random() * 10) + 1, "<br><br>");
-            var x = -64;
-            document.write("Value: ", x, "<br>Math.abs(): ", Math.abs(x), "<br><br>");
-            document.write("Math.PI: ", Math.PI, "<br><br>");
+            // Date Method
+            date = new Date();
+            document.write('new Date(): ', date, '<br>');
+            document.write('getDate(): ', date.getDate(), '<br>');
+            document.write('getFullYear(): ', date.getFullYear(), '<br>');
+            document.write('getHours(): ', date.getHours(), '<br>');
+            document.write('getMonth(): ', date.getMonth(), '<br>');
+            document.write('getSeconds(): ', date.getSeconds(), '<br>');
+
+            date.setSeconds(10);
+            date.setMinutes(10);
+            date.setHours(10);
+            date.setDate(2);
+            date.setMonth(9);
+            date.setFullYear(1998);
+            document.write('date set: ', date);
     </script>
 </body>
 </html>
