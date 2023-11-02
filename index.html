@@ -8,22 +8,43 @@
 
 <body>
     <script>
-            // Date Method
-            date = new Date();
-            document.write('new Date(): ', date, '<br>');
-            document.write('getDate(): ', date.getDate(), '<br>');
-            document.write('getFullYear(): ', date.getFullYear(), '<br>');
-            document.write('getHours(): ', date.getHours(), '<br>');
-            document.write('getMonth(): ', date.getMonth(), '<br>');
-            document.write('getSeconds(): ', date.getSeconds(), '<br>');
+            // Dom Model
 
-            date.setSeconds(10);
-            date.setMinutes(10);
-            date.setHours(10);
-            date.setDate(2);
-            date.setMonth(9);
-            date.setFullYear(1998);
-            document.write('date set: ', date);
+
+            /*
+                                               Root Element
+                                               ____________
+                                              |            |
+                                              |    HTML    |
+                                              |____________|   
+                      parent                         |                      parent
+                    __________                       |                     __________
+                   |          | First Child Element  | Last Child Element |          |
+                   |   Head   |______________________|____________________|   Body   |
+                   |__________|                                           |__________|
+                        |                                                       |
+                        |                                                       |
+            ____________|____________                               ____________|____________
+           |            |            |                             |            |            |
+                    child        child                         child        child
+        ________    ________      ________                  __________       _________     _________
+       |        |  |        |    |        |                |          |     |         |   |         |
+       |  Title |  |  Meta  |    |  Link  |                |  Header  |     | Section |   |  Footer |
+       |________|  |________|    |________|                |__________|     |_________|   |_________|
+                                                                                |
+                                                                                |
+                                                                                |   parent
+                                                                    ____________|____________
+                                                           child   |                         | child
+                                                                ________                  ________                
+                                                               |        |                |        |
+            Get                                                |   H1   |                |    P   |                   
+            Set                                                |________|                |________|
+            Add HTML Element                    _________          |
+                                               |         |_________|
+                                               |   Attr. |
+                                               |_________|
+            */
     </script>
 </body>
 </html>
