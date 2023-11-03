@@ -8,17 +8,25 @@
 
 <body>
     <script>
-            // DOM Get Methods
+            // DOM Styling
             /*
-            - innerText
-            - innerHTML
-            - getAttribute
-            - getAttributeNode
-            - Attributes
 
-            var name = document.getElementById("header").getAttribute("style");
-            console.log(name);
+            var element;
+            
+            // show set class
+            element = document.querySelector("#header").style.border;
+            console.log(element);
+            
+            // change color
+            document.querySelector("#header").style.backgroundColor = "red";
 
+            document.querySelector('#header').classList = "head hello";
+            document.querySelector('#header').classList.add("head", "hello", "xyz");
+            document.querySelector('#header').classList.remove("xyz");
+            
+            
+            element = document.querySelector('#header').classList;
+            console.log(element)
             */
     </script>
 </body>
