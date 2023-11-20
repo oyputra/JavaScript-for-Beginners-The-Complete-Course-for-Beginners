@@ -6,77 +6,33 @@
     <title>Document</title>
 </head>
 <style>
-    nav {
-		font-family: arial;
-        margin: auto;
-        margin: 0 20px;
-	} 
-	
-	nav ul {
-        display: inline-block;
-        padding: 0;
-        margin: 0;
-	 }
-
-	nav ul li{
-        display: inline-block;
-        padding: 10px 50px;
-	}
-
-    nav ul li:hover{
+    .outside {
+        padding: 100px;
         background-color: yellow;
-	}
-    
-    .border-solid {
-        border: 1px solid black;
     }
-
-    .inline {
-        display: inline;
-    }
-    
-    .block {
-        display: block;
-    }
-
-    .container {
-        margin: auto 100px;
-    }
-
-    .margin-y-20 {
-        margin: 0 20px;
-    }
-
-    .align-left {
-        text-align: left;
+    .inside {
+        padding: 100px;
+        background-color: aqua;
     }
 </style>
 <body>
-    <div class="container border-solid">
-        <nav id="header">
-            <h1 class="align-left title">JavaCripts</h1>
-            <ul>
-                <li class="border-solid">Home</li>
-                <li class="border-solid">About</li>
-                <li class="border-solid">Contact</li>
-                <li class="border-solid">Profil</li>
-            </ul>
-        </nav>
-        <div class="margin-y-20">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora dolorum, quo voluptate, magnam optio explicabo blanditiis fuga assumenda molestiae autem vitae facilis alias iusto veritatis neque id corporis odit temporibus ipsa aliquam tenetur earum! Similique nulla aut soluta et, quibusdam reiciendis aperiam libero magni officia facere ipsam voluptas animi eveniet, error minus aspernatur eius quia ullam possimus ducimus, ipsum atque? Amet vitae ad et repellat perspiciatis ex soluta rem consectetur eos accusantium! Tenetur voluptate quod error quaerat, assumenda quisquam repudiandae! Voluptatibus sunt cum, harum recusandae aliquam aperiam accusantium ex possimus neque mollitia accusamus quia, iste quod. Eum delectus adipisci corrupti, quos beatae veritatis hic doloribus laborum fuga. Minus sit sapiente aliquid quisquam eum distinctio, autem eveniet optio nulla quae voluptatum, quasi a tempora debitis in corporis magnam ex officiis qui asperiores. Sapiente ad quam fugit incidunt soluta aperiam repudiandae libero ratione. Nam at perspiciatis vel amet a repudiandae hic minus consectetur magnam dicta ratione voluptatem recusandae, nemo, facere quam minima aspernatur. Dicta incidunt sapiente, reprehenderit provident magnam voluptates hic officiis obcaecati ipsa, harum sit, blanditiis ipsam nemo vero culpa tenetur impedit sequi temporibus. Asperiores ut, eos nobis modi maxime deleniti perferendis voluptates, ipsa qui culpa delectus enim consequuntur. Ullam, commodi. Illo, nemo vero a omnis nihil eos minima rem rerum accusantium placeat impedit eveniet neque mollitia quasi illum quae dolores iste amet quaerat eligendi? Repudiandae nisi molestias, expedita, voluptatem tempore officiis perferendis itaque, voluptate unde nobis debitis quam provident harum necessitatibus nostrum quos adipisci. Id dolore odit ab unde labore? Minus doloremque nobis aperiam veniam? Aspernatur nam dicta nulla labore necessitatibus ipsa ut eos eveniet fuga illo, culpa sapiente molestiae aliquid architecto! In, aspernatur aliquam libero rem est numquam consequuntur temporibus reprehenderit dignissimos nesciunt qui tenetur itaque adipisci! Officia fugit quia temporibus eveniet minima, tempora id nulla dolor odio possimus, quasi doloribus totam obcaecati minus placeat doloremque. Quae, optio! Est nam, maiores mollitia illum repellendus fuga corporis voluptatum. Doloribus non, reprehenderit, eaque excepturi incidunt, odio eveniet ex cupiditate deserunt ullam laudantium sapiente quae et at consectetur! Molestiae consectetur, ab ullam fugiat obcaecati, veritatis quaerat autem, voluptatibus magnam sint nihil facere nisi? Impedit, dolore! Iure, fugiat temporibus, minus corrupti iste illum omnis ullam natus modi dolores dignissimos esse reprehenderit tenetur hic enim eveniet pariatur sunt, ipsa necessitatibus sint veritatis officiis assumenda! Architecto velit alias id sequi deleniti dignissimos repellendus accusamus reprehenderit tempora, nihil, ipsa laborum quia repudiandae facilis ipsam nesciunt cum inventore earum tempore quibusdam nisi aliquid? Fugiat a sequi aspernatur similique quae nam blanditiis? Debitis tempore numquam, itaque, quas possimus quae voluptatem inventore dolorem consectetur, facere aliquam id repellendus quod perferendis reprehenderit laborum! Atque soluta molestiae dicta! Tenetur tempora aliquid alias magni, officiis iste. Tempora, at doloribus. Minima quasi aspernatur magni neque, velit in, suscipit pariatur rerum autem iusto cum, illo excepturi eos? Omnis harum alias libero nostrum beatae obcaecati accusamus sint minus, odit, sunt doloremque? Porro, voluptas! Magni, quam dolorem non sequi nemo unde repellat iste error beatae, voluptate illo! Iure dolor placeat repellendus harum modi aut corporis ad.</p>
+    <div class="outside">
+        <p>outside</p>
+        <div class="inside">
+            <p>inside</p>
         </div>
     </div>
     <script>
-            // addEventListener (Events)
-            // document.getElementById("header").onclick = fun;
-            document.getElementById("header").addEventListener("click", fun);
-            document.getElementById("header").addEventListener("click", function (params) {
-                document.getElementById("header").style.color = "aqua";
-            });
+            // Use Capture
+            document.querySelector(".inside").addEventListener("click", function (params) {
+                alert("This is a innerside");
+            }, false
+            );
 
-            function fun(params) {
-                document.getElementById("header").style.background = "red";
-            }
+            document.querySelector(".outside").addEventListener("click", function (params) {
+                alert("This is a outside");
+            }, true
+            );
     </script>
 </body>
 </html>
