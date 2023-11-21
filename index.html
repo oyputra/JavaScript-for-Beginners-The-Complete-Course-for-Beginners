@@ -14,25 +14,30 @@
         padding: 100px;
         background-color: aqua;
     }
+    .newclass {
+        background-color: red;
+    }
 </style>
 <body>
     <div class="outside">
         <p>outside</p>
-        <div class="inside">
-            <p>inside</p>
-        </div>
+    </div>
+    <div class="inside">
+        <p>inside</p>
     </div>
     <script>
-            // Use Capture
-            document.querySelector(".inside").addEventListener("click", function (params) {
-                alert("This is a innerside");
-            }, false
-            );
+            // classList Method
+            document.querySelector(".inside").addEventListener("click", fun);
+            function fun(params) {
+                document.querySelector(".inside").classList.add("newclass");
+            }
 
-            document.querySelector(".outside").addEventListener("click", function (params) {
-                alert("This is a outside");
-            }, true
-            );
+            document.querySelector(".outside").addEventListener("click", funday);
+            function funday(params) {
+                document.querySelector(".outside").classList.remove("outside");
+            }
+
+            // juga bisa menggunakan classList.toggle atau contains
     </script>
 </body>
 </html>
