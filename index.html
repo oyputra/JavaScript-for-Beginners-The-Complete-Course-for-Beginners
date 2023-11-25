@@ -6,38 +6,46 @@
     <title>Document</title>
 </head>
 <style>
-    .outside {
-        padding: 100px;
-        background-color: yellow;
+    #outer {
+        width: 550px;
+        height: 300px;
+        padding: 10px 10px;
+        margin: 0 auto;
+        background: rgb(71, 49, 40);
     }
-    .inside {
-        padding: 100px;
-        background-color: aqua;
+    #inner {
+        width: 500px;
+        height: 200px;
+        padding: 10px 10px;
+        margin: 0 auto;
+        background: rgb(104, 23, 124);
     }
-    .newclass {
-        background-color: red;
+    #inner div {
+        display: inline-block;
+        background: rgb(241, 16, 16);
+        width: 95px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
     }
 </style>
 <body>
-    <div class="outside">
-        <p>outside</p>
-    </div>
-    <div class="inside">
-        <p>inside</p>
+    <div id="outer">
+        <h2>Outer</h2>
+        <div id="inner">
+            <h2 id="innerside">Innerside</h2>
+            <div>one</div>
+            <div>two</div>
+            <div id="child-c">three</div>
+            <div>four</div>
+            <div>five</div>
+        </div>
     </div>
     <script>
-            // classList Method
-            document.querySelector(".inside").addEventListener("click", fun);
-            function fun(params) {
-                document.querySelector(".inside").classList.add("newclass");
-            }
-
-            document.querySelector(".outside").addEventListener("click", funday);
-            function funday(params) {
-                document.querySelector(".outside").classList.remove("outside");
-            }
-
-            // juga bisa menggunakan classList.toggle atau contains
+            // Parent Nodes
+            document.getElementById("inner").parentElement.style.background = "pink";
+            var one = document.getElementById("inner").parentNode;
+            console.log(one);
     </script>
 </body>
 </html>
