@@ -40,11 +40,12 @@
             <div>four</div>
             <div>five</div>
         </div>
+        <h2>Last</h2>
     </div>
     <script>
-            // First & Last Child
-            document.getElementById("inner").firstElementChild.style.background = "pink"; // or using lastElementChild
-            var one = document.getElementById("inner").firstChild; // or lastChild
+            // Next & Previous Siblings
+            document.getElementById("inner").previousElementSibling.style.background = "pink"; // or using lastElementChild
+            var one = document.getElementById("inner").nextElementSibling; // or lastChild
             console.log(one);
     </script>
 </body>
