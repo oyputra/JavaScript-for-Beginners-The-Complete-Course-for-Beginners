@@ -16,8 +16,8 @@
     #inner {
         width: 500px;
         height: 200px;
-        padding: 10px 10px;
-        margin: 0 auto;
+        padding: 30px 10px;
+        margin: 50px auto;
         background: rgb(104, 23, 124);
     }
     #inner div {
@@ -40,10 +40,13 @@
             <div>four</div>
             <div>five</div>
         </div>
-        <h2>Last</h2>
+        <div id="new">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid illo sunt ab saepe cumque officiis officia, repellendus ea maiores qui eligendi tempore inventore sapiente ipsam velit laborum optio nisi explicabo dolore quae odio quisquam. Dicta, voluptate. Enim ullam dolor consectetur mollitia quasi deleniti quidem eaque, illo, velit qui aut, necessitatibus minima. In iste quos quisquam quibusdam id tempore officia consequuntur numquam voluptatibus voluptatem, sapiente quae quaerat ex tempora sunt. Doloremque ratione maiores nesciunt cupiditate hic. Adipisci earum neque quo voluptatum. Magni nulla aspernatur ad nobis rerum atque, odit voluptates labore distinctio debitis, quos nisi exercitationem reiciendis! Ducimus doloribus ad velit.</p>
+            <p>Second ipsum dolor sit amet consectetur adipisicing elit. Aliquid illo sunt ab saepe cumque officiis officia, repellendus ea maiores qui eligendi tempore inventore sapiente ipsam velit laborum optio nisi explicabo dolore quae odio quisquam. Dicta, voluptate. Enim ullam dolor consectetur mollitia quasi deleniti quidem eaque, illo, velit qui aut, necessitatibus minima. In iste quos quisquam quibusdam id tempore officia consequuntur numquam voluptatibus voluptatem, sapiente quae quaerat ex tempora sunt. Doloremque ratione maiores nesciunt cupiditate hic. Adipisci earum neque quo voluptatum. Magni nulla aspernatur ad nobis rerum atque, odit voluptates labore distinctio debitis, quos nisi exercitationem reiciendis! Ducimus doloribus ad velit.</p>
+        </div>
     </div>
     <script>
-            // Create Element Text Node
+            // Append Child & Insert Before
             var one = document.createElement("h3");
             var two = document.createTextNode("Learning JavaScripts");
             var three = document.createComment("This is a JS Comments");
@@ -51,6 +54,11 @@
             console.log(one);
             console.log(two);
             console.log(three);
+
+            one.appendChild(two);
+            document.getElementById("new").appendChild(one);
+            var target = document.getElementById("new");
+            target.insertBefore(one, target.childNodes[2]);
     </script>
 </body>
 </html>
