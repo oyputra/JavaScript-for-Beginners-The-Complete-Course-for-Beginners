@@ -28,6 +28,9 @@
         line-height: 50px;
         text-align: center;
     }
+    #new {
+        background-color: brown;
+    }
 </style>
 <body>
     <div id="outer">
@@ -46,7 +49,7 @@
         </div>
     </div>
     <script>
-            // Append Child & Insert Before
+            // Insert Adjacent Element, Text, & HTML
             var one = document.createElement("h3");
             var two = document.createTextNode("Learning JavaScripts");
             var three = document.createComment("This is a JS Comments");
@@ -55,10 +58,19 @@
             console.log(two);
             console.log(three);
 
+            // insertAdjacentElement, insertAdjacentText, insertAdjacentHTML
+            // Beforebegin, Afterbegin, Beforeend, Afterend
+            
             one.appendChild(two);
-            document.getElementById("new").appendChild(one);
             var target = document.getElementById("new");
-            target.insertBefore(one, target.childNodes[2]);
+            
+            // target.insertAdjacentElement("afterbegin", one);
+            
+            // one = "ini text";
+            // target.insertAdjacentText("afterbegin", one);
+            
+            one = "<h2>Ini HTML</h2>";
+            target.insertAdjacentHTML("afterbegin", one);
     </script>
 </body>
 </html>
