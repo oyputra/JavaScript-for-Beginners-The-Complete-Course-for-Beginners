@@ -43,10 +43,14 @@
         <h2>Last</h2>
     </div>
     <script>
-            // Next & Previous Siblings
-            document.getElementById("inner").previousElementSibling.style.background = "pink"; // or using lastElementChild
-            var one = document.getElementById("inner").nextElementSibling; // or lastChild
+            // Create Element Text Node
+            var one = document.createElement("h3");
+            var two = document.createTextNode("Learning JavaScripts");
+            var three = document.createComment("This is a JS Comments");
+            
             console.log(one);
+            console.log(two);
+            console.log(three);
     </script>
 </body>
 </html>
