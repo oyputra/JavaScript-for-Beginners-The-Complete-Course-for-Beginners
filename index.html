@@ -42,9 +42,9 @@
         </div>
     </div>
     <script>
-            // Children Nodes
-            document.getElementById("inner").children[2].style.background = "pink";
-            var one = document.getElementById("inner").childNodes[5];
+            // First & Last Child
+            document.getElementById("inner").firstElementChild.style.background = "pink"; // or using lastElementChild
+            var one = document.getElementById("inner").firstChild; // or lastChild
             console.log(one);
     </script>
 </body>
